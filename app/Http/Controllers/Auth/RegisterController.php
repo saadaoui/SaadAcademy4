@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Mail\NewUserRegistered;
 use App\Providers\RouteServiceProvider;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
@@ -75,10 +77,11 @@ class RegisterController extends Controller
             'email_token'=>bin2hex(openssl_random_pseudo_bytes(30)),
 
         ]);
-        return $user;
+
         //TODO: email user
+        Mail::to($user)->queue(new NewUserRegistered($user));
 
         //TODO: email admin
-
+return $user;
     }
 }

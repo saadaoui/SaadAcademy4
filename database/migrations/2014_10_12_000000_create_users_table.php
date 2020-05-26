@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('last_name');
             $table->string('account_type')->default('student');
             $table->string('email')->unique();
-            $table->string('email_token')->unique();
+            $table->string('email_token')->nullable()->unique();
             $table->boolean('email_verified')->default(false);
             $table->string('password');
             $table->rememberToken();
