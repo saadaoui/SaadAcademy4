@@ -1,5 +1,6 @@
 <?php
 
+use App\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('confirm/{token}', 'EmailConfirmationController@confirm')->name('email_confirmation');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('language', 'LanguageController@setLanguage')->name('language');
+
+Route::get('test', function (){
+
+    $user=User::find(1);
+
+    return new \App\Mail\NewUserRegistered($user);
 });

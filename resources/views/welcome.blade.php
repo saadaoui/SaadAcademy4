@@ -62,6 +62,7 @@
                 margin-bottom: 30px;
             }
         </style>
+        <script src="{{asset('js/app.js')}}"></script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -76,12 +77,22 @@
                             <a href="{{ route('register') }}">Register</a>
                         @endif
                     @endauth
+
+                        <form id="language_switcher" action="{{ route('language') }}" method="post">
+                            @csrf
+                            <select name="language" id="language">
+                                <option value="en" {{ ( session()->has('locale') && session('locale') == 'en' ? 'selected' : '' )}}>English</option>
+                                <option value="ar" {{ ( session()->has('locale') && session('locale') == 'ar' ? 'selected' : '' )}}>عربي</option>
+                                <option value="fr" {{ ( session()->has('locale') && session('locale') == 'fr' ? 'selected' : '' )}}>Français</option>
+                            </select>
+                        </form>
+
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    {{__('account.first_name')}}
                 </div>
 
                 <div class="links">
