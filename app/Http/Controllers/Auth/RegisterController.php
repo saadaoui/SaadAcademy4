@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Mail\AdminNotifyNewUserRegistered;
 use App\Mail\NewUserRegistered;
 use App\Providers\RouteServiceProvider;
 use App\User;
@@ -78,10 +79,12 @@ class RegisterController extends Controller
 
         ]);
 
-        //TODO: email user
+        //email user
         Mail::to($user)->queue(new NewUserRegistered($user));
 
-        //TODO: email admin
+        //email admin
+        $admin=User::find(1);
+        Mail::to($admin)->queue(new AdminNotifyNewUserRegistered($user));
 return $user;
     }
 }

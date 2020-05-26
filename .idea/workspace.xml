@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa73eb6-ca0c-4f6c-8d07-dfea25a7dfd2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Mail/AdminNotifyNewUserRegistered.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_05_26_131905_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/account/new-user-registered.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,13 +222,14 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="revision_emaiil" />
-    <option name="LAST_COMMIT_MESSAGE" value="revision_emaiil" />
+    <MESSAGE value="revision_emaiil_final" />
+    <option name="LAST_COMMIT_MESSAGE" value="revision_emaiil_final" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590464072773">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590496595747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590464072773" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590496595747" />
     <state x="460" y="275" key="ComposerInitDialogKey" timestamp="1590437222965">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -243,22 +246,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="68" width="716" height="592" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590437654135" />
-    <state width="1322" height="175" key="GridCell.Tab.0.bottom" timestamp="1590496073456">
+    <state width="1322" height="175" key="GridCell.Tab.0.bottom" timestamp="1590500208260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="175" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590496073456" />
-    <state width="1322" height="175" key="GridCell.Tab.0.center" timestamp="1590496073456">
+    <state width="1322" height="175" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590500208260" />
+    <state width="1322" height="175" key="GridCell.Tab.0.center" timestamp="1590500208260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="175" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590496073456" />
-    <state width="1322" height="175" key="GridCell.Tab.0.left" timestamp="1590496073456">
+    <state width="1322" height="175" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590500208260" />
+    <state width="1322" height="175" key="GridCell.Tab.0.left" timestamp="1590500208260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="175" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590496073456" />
-    <state width="1322" height="175" key="GridCell.Tab.0.right" timestamp="1590496073456">
+    <state width="1322" height="175" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590500208260" />
+    <state width="1322" height="175" key="GridCell.Tab.0.right" timestamp="1590500208260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="175" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590496073456" />
+    <state width="1322" height="175" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590500208260" />
     <state x="586" y="366" key="NewPhpFileDialog" timestamp="1590457870457">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
