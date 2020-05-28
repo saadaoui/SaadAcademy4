@@ -33,3 +33,5 @@ Route::get('test', function (){
 
     return new \App\Mail\NewUserRegistered($user);
 });
+
+

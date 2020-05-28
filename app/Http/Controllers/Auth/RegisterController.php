@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Jobs\SignUpUserToNewsletter;
 use App\Mail\AdminNotifyNewUserRegistered;
 use App\Mail\NewUserRegistered;
 use App\Providers\RouteServiceProvider;
@@ -76,6 +77,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'email_token'=>bin2hex(openssl_random_pseudo_bytes(30)),
+            'api_token'=>bin2hex(openssl_random_pseudo_bytes(30)),
 
         ]);
 
@@ -83,8 +85,14 @@ class RegisterController extends Controller
         Mail::to($user)->queue(new NewUserRegistered($user));
 
         //email admin
-        $admin=User::find(1);
+        $admin=User::where([
+            'account_type'=>'admin'
+        ])->flrst();
         Mail::to($admin)->queue(new AdminNotifyNewUserRegistered($user));
-return $user;
+
+        // register new user on newsletter
+        SignUpUserToNewsletter::dispatch($user);
+
+        return $user;
     }
 }
