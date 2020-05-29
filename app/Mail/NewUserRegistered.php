@@ -36,7 +36,7 @@ class NewUserRegistered extends Mailable
             App::setLocale(session()->get('locale'));
         }
         return $this->markdown('emails.account.new-account')->with([
-            'user'=>$this->user,
+            'users'=>$this->user,
         ]);
     }
 }

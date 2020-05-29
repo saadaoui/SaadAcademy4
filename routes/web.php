@@ -20,18 +20,21 @@ Route::get('/', function () {
 });
 
 Route::get('confirm/{token}', 'EmailConfirmationController@confirm')->name('email_confirmation');
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::post('language', 'LanguageController@setLanguage')->name('language');
+
+// User's Route
+Route::get('profile',  'UserProfileController@show')->name('profile');
+Route::post('profile/address',  'UserProfileController@updateAddress')->name('profile-address');
+
+
 
 Route::get('test', function (){
 
     $user=User::find(1);
 
-    return new \App\Mail\NewUserRegistered($user);
+    return $user->billingAddress;
 });
 
 

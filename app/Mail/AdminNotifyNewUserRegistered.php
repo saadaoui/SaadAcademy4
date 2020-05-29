@@ -31,8 +31,8 @@ class AdminNotifyNewUserRegistered extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.account.new-user-registered')->with([
-            'user'=>$this->user,
+        return $this->markdown('emails.account.new-users-registered')->with([
+            'users'=>$this->user,
         ]);
     }
 }

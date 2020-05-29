@@ -63,7 +63,7 @@ class RegisterController extends Controller
     }
 
     /**
-     * Create a new user instance after a valid registration.
+     * Create a new users instance after a valid registration.
      *
      * @param  array  $data
      * @return \App\User
@@ -81,7 +81,7 @@ class RegisterController extends Controller
 
         ]);
 
-        //email user
+        //email users
         Mail::to($user)->queue(new NewUserRegistered($user));
 
         //email admin
@@ -90,7 +90,7 @@ class RegisterController extends Controller
         ])->flrst();
         Mail::to($admin)->queue(new AdminNotifyNewUserRegistered($user));
 
-        // register new user on newsletter
+        // register new users on newsletter
         SignUpUserToNewsletter::dispatch($user);
 
         return $user;

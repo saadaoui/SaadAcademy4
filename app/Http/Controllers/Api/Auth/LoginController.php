@@ -21,7 +21,7 @@ class LoginController extends Controller
 
          $userExists=Auth::attempt($this->credentials($request));
          if(!$userExists){
-             return Response::make('no user fouund', 404);
+             return Response::make('no users fouund', 404);
 
          }
          $user=User::where([

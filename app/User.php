@@ -18,7 +18,7 @@ class User extends Authenticatable
     protected $fillable = [
         'first_name','last_name', 'email', 'password',
         'account_type', 'email_verified', 'email_token',
-        'api_token'
+        'api_token','billing_address', 'shipping_address'
     ];
 
     /**
@@ -41,5 +41,17 @@ class User extends Authenticatable
 
     public function formatedName(){
         return $this->first_name.' '.$this->last_name;
+    }
+
+    public function billingAddress(){
+
+      return $this->hasOne(Address::class,'id','billing_address');
+
+    }
+
+    public function shippingAddress(){
+
+        return $this->hasOne(Address::class,'id','shipping_address');
+
     }
 }
