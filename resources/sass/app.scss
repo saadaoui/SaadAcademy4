@@ -1,4 +1,33 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+@import "variables";
+
 @import "~bootstrap";
+
+
+.search-input{
+    border-radius: 0 25px 25px 0;
+    background-color: $light;
+    border: solid 1px $light;
+    height: calc(1em  + 0.75rem + 2px);
+}
+
+.search-btn{
+    border-radius: 25px 0 0 25px;
+    background-color: $light;
+    color: white;
+    border: solid 1px $light;
+    margin-right: 1px;
+    line-height: 0.6;
+}
+
+.search-btn.btn-outline-success:focus{
+     box-shadow: lighten($light, 15%) !important;
+}
+
+.search-btn:hover, .search-btn:active, .search-btn:focus, .search-btn:visited{
+    background-color: lighten($light, 15%) !important;
+    border: solid  1px lighten($light, 15%) !important;
+    box-shadow: lighten($light, 15%) !important;
+}

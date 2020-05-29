@@ -979,7 +979,7 @@
         if (_this3._config.pause === 'hover') {
           // If it's a touch-enabled device, mouseenter/leave are fired as
           // part of the mouse compatibility events on first tap - the carousel
-          // would stop cycling until users tapped out of it;
+          // would stop cycling until user tapped out of it;
           // here, we listen for touchend, explicitly pause the carousel
           // (as if it's the second time we tap on it, mouseenter compat event
           // is NOT fired) and after a timeout (to allow for mouse compatibility
@@ -6277,7 +6277,7 @@ getText = Sizzle.getText = function( elem ) {
 
 Expr = Sizzle.selectors = {
 
-	// Can be adjusted by the users
+	// Can be adjusted by the user
 	cacheLength: 50,
 
 	createPseudo: markFunction,
@@ -6578,7 +6578,7 @@ Expr = Sizzle.selectors = {
 				fn = Expr.pseudos[ pseudo ] || Expr.setFilters[ pseudo.toLowerCase() ] ||
 					Sizzle.error( "unsupported pseudo: " + pseudo );
 
-			// The users may use createPseudo to indicate that
+			// The user may use createPseudo to indicate that
 			// arguments are needed to create the filter function
 			// just as Sizzle does
 			if ( fn[ expando ] ) {
@@ -8915,9 +8915,9 @@ var dataUser = new Data();
 //	1. Enforce API surface and semantic compatibility with 1.9.x branch
 //	2. Improve the module's maintainability by reducing the storage
 //		paths to a single mechanism.
-//	3. Use the same single mechanism to support "private" and "users" data.
-//	4. _Never_ expose "private" data to users code (TODO: Drop _data, _removeData)
-//	5. Avoid exposing implementation details on users objects (eg. expando properties)
+//	3. Use the same single mechanism to support "private" and "user" data.
+//	4. _Never_ expose "private" data to user code (TODO: Drop _data, _removeData)
+//	5. Avoid exposing implementation details on user objects (eg. expando properties)
 //	6. Provide a clear path for implementation upgrade to WeakMap in 2014
 
 var rbrace = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,
@@ -10546,7 +10546,7 @@ function cloneCopyEvent( src, dest ) {
 		}
 	}
 
-	// 2. Copy users data
+	// 2. Copy user data
 	if ( dataUser.hasData( src ) ) {
 		udataOld = dataUser.access( src );
 		udataCur = jQuery.extend( {}, udataOld );
@@ -11429,7 +11429,7 @@ jQuery.extend( {
 
 		// Make sure that we're working with the right name. We don't
 		// want to query the value if it is a CSS custom property
-		// since they are users-defined.
+		// since they are user-defined.
 		if ( !isCustomProp ) {
 			name = finalPropName( origName );
 		}
@@ -11498,7 +11498,7 @@ jQuery.extend( {
 
 		// Make sure that we're working with the right name. We don't
 		// want to modify the value if it is a CSS custom property
-		// since they are users-defined.
+		// since they are user-defined.
 		if ( !isCustomProp ) {
 			name = finalPropName( origName );
 		}
@@ -14382,7 +14382,7 @@ jQuery._evalUrl = function( url, options, doc ) {
 	return jQuery.ajax( {
 		url: url,
 
-		// Make this explicit, since users can override this through ajaxSetup (#11264)
+		// Make this explicit, since user can override this through ajaxSetup (#11264)
 		type: "GET",
 		dataType: "script",
 		cache: true,
@@ -14901,7 +14901,7 @@ jQuery.fn.load = function( url, params, callback ) {
 
 			// If "type" variable is undefined, then "GET" method will be used.
 			// Make value of this field explicit since
-			// users can override it through ajaxSetup method
+			// user can override it through ajaxSetup method
 			type: type || "GET",
 			dataType: "html",
 			data: params
@@ -16425,7 +16425,7 @@ function destroy() {
 
   this.disableEventListeners();
 
-  // remove the popper if users explicitly asked for the deletion on destroy
+  // remove the popper if user explicitly asked for the deletion on destroy
   // do not use `remove` because IE11 doesn't support it
   if (this.options.removeOnDestroy) {
     this.popper.parentNode.removeChild(this.popper);

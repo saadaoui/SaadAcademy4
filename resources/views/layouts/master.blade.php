@@ -11,11 +11,13 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script>{{ asset('css/fontawesome-free/js/all.js') }}</script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <link rel="stylesheet" href="{{ asset('css/fontawesome-free/css/all.css') }}">
     <!-- Styles -->
     <link href="{{ (app()->getLocale() == 'ar') ? asset('css/app-ar.css') : asset('css/app.css') }}" rel="stylesheet">
 </head>

@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.13.0",
         "bootstrap-v4-rtl": "^4.4.1-2",
         "uikit": "^3.4.6"
     }
