@@ -1,11 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;
 
-/*!
- * Bootstrap v4.5.0 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+500;600;700&display=swap);@charset "UTF-8";
 
 :root {
   --blue: #3490dc;
@@ -10933,6 +10928,24 @@ a.text-dark:focus {
   }
 }
 
+body,
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+.btn-link,
+.a {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none !important;
+  font-weight: 600;
+  color: #38c172;
+}
+
+.btn-link:hover,
+.a:hover {
+  text-decoration: none !important;
+}
+
 .search-input {
   border-radius: 0 25px 25px 0;
   background-color: #3d3d3f;
@@ -10960,5 +10973,201 @@ a.text-dark:focus {
   background-color: #636366 !important;
   border: solid 1px #636366 !important;
   box-shadow: #636366 !important;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 0.8em;
+  letter-spacing: 1.1px;
+}
+
+.footer-paragraph {
+  font-weight: 600;
+  font-size: 0.7em;
+  color: #4d4d4d;
+  line-height: 2;
+  letter-spacing: 1.1px;
+}
+
+.red-title {
+  color: #b624ff;
+}
+
+.blue-title {
+  color: #53c9eb;
+}
+
+.yellow-title {
+  color: #b6d546;
+}
+
+.teal-title {
+  color: #848393;
+}
+
+.footer-list-item {
+  padding: 2px 0;
+}
+
+.site-ulist-blue .footer-list-item a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.site-ulist-blue .footer-list-item a:hover,
+.site-ulist-blue .footer-list-item a:active,
+.site-ulist-blue .footer-list-item a:focus {
+  color: #53c9eb;
+}
+
+.site-ulist-yellow .footer-list-item a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.site-ulist-yellow .footer-list-item a:hover,
+.site-ulist-yellow .footer-list-item a:active,
+.site-ulist-yellow .footer-list-item a:focus {
+  color: #b6d546;
+}
+
+.site-ulist {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-social-ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-social-ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.site-social-ul li a {
+  display: inline-block;
+  color: #4d4d4d;
+  border-radius: 50%;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+}
+
+.site-social-ul li a:hover {
+  color: white;
+}
+
+.site-social-ul li:first-child a:hover {
+  background-color: #3b5998;
+}
+
+.site-social-ul li:nth-child(2) a:hover {
+  background-color: #0077b5;
+}
+
+.site-social-ul li:nth-child(3) a:hover {
+  background-color: #1da1f2;
+}
+
+.site-social-ul li:last-child a:hover {
+  background-color: #ff0000;
+}
+
+.bg-site-light {
+  background-color: #292929;
+}
+
+a.gotop {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: #4d4d4d;
+  border-radius: 50%;
+  color: #a6a6a6;
+}
+
+.newsletter-wrapper p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.newsletter-wrapper form {
+  display: inline-block;
+}
+
+.newsletter-wrapper form input.newsletter-form-control {
+  background-color: #3d3d3f;
+  border: none;
+  border-radius: 1px;
+}
+
+.newsletter-btn,
+.newsletter-btn:hover {
+  background-color: transparent;
+  border: solid 1px white;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.content-wrapper {
+  padding-bottom: 75px;
+  padding-top: 75px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.signin-card img {
+  display: inline-block;
+}
+
+.signin-card p {
+  text-align: center;
+  color: #a6a6a6;
+}
+
+.signin-card h4 {
+  font-weight: 400;
+  color: #1c1c1c;
+  text-align: center;
+}
+
+.auth-btn {
+  background-color: #38c172;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  letter-spacing: 1.1px;
+}
+
+.auth-btn:hover {
+  color: white;
+  background-color: #70d69b;
+}
+
+.auth-form {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  display: inline-block;
+  background-color: #cdcdcd;
+}
+
+.auth-form .form-control {
+  border-radius: 0 !important;
+  border: solid 1px #cdcdcd !important;
+}
+
+.auth-form .form-check-label {
+  color: #a6a6a6;
 }
 
