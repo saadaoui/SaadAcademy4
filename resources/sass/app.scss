@@ -246,4 +246,30 @@ a.gotop{
 
 .auth-form .form-check-label{
     color: lighten($site-light-grey, 35%);
-    }
+}
+
+ul.list-group li.active a{
+   color: white !important;
+    text-decoration: none;
+}
+
+ul.list-group li.active {
+   background-color: $dark;
+    border-color: $dark;
+}
+
+ul.list-group li a{
+    color: $green;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+ul.list-group li a:hover{
+    color: $black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-primary{
+    color:white;
+}

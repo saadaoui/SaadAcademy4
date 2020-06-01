@@ -1,4 +1,3 @@
-@include('common/newsletter')
 
 <footer class="bg-dark border  border-light border-left-0 border-right-0 border-bottom-0">
 

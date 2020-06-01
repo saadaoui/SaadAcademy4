@@ -38,6 +38,7 @@
 
             <ul class="navbar-nav ml-auto">
 
+                @if( is_null(auth()->user()))
                 <li class="nav-item {{(\Illuminate\Support\Facades\Route::currentRouteName() == 'register') ? 'active' : ''}}">
                     <a class="nav-link mr-2" href="{{route('register')}}">SIGN UP</a>
                 </li>
@@ -45,6 +46,20 @@
                 <li class="nav-item {{(\Illuminate\Support\Facades\Route::currentRouteName() == 'login') ? 'active' : ''}}">
                     <a class="nav-link" href="{{route('login')}}">SIGN IN</a>
                 </li>
+                @else
+                   <li>
+                       <a class="nav-link mr-2" href="{{ route('logout') }}"
+                          onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                           {{ __('Logout') }}
+                       </a>
+
+                       <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                           @csrf
+                       </form>
+                   </li>
+                @endif
+
 
             </ul>
 

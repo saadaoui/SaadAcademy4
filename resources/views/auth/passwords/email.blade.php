@@ -1,11 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+    <div class="content-wrapper" style="background: url('{{  asset('images/background.jpg') }}')">
+     <div class="container">
+     <div class="row justify-content-center signin-card">
+        <div class="col-md-6 col-sm-12">
+            <div class="card pt-5 pb-5 text-center">
+                <img  width="70" class="img-fluid m-auto" src="{{ asset('images/logo2.png') }}" alt="site-logo2">
+                <h4 class="mt-4">Recover Password</h4>
+                <p> gffg hfhhj dsu hgfjjb fdhu hgii hhhtezasf hhh</p>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,14 +17,13 @@
                         </div>
                     @endif
 
-                    <form method="POST" action="{{ route('password.email') }}">
+                    <form method="POST" action="{{ route('password.email') }}" class="auth-form">
+                        <div  class="divider mb-4"></div>
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            <div class="col-12">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Your Email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -32,8 +34,8 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-lg auth-btn">
                                     {{ __('Send Password Reset Link') }}
                                 </button>
                             </div>
@@ -44,4 +46,6 @@
         </div>
     </div>
 </div>
+    </div>
+    @include('common/newsletter')
 @endsection

@@ -66,7 +66,7 @@ class RegisterController extends Controller
      * Create a new users instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\User
+     * @return User
      */
     protected function create(array $data)
     {
@@ -87,7 +87,7 @@ class RegisterController extends Controller
         //email admin
         $admin=User::where([
             'account_type'=>'admin'
-        ])->flrst();
+        ])->first();
         Mail::to($admin)->queue(new AdminNotifyNewUserRegistered($user));
 
         // register new users on newsletter

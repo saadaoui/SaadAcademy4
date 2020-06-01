@@ -25,10 +25,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::post('language', 'LanguageController@setLanguage')->name('language');
 
 // User's Route
-Route::get('profile',  'UserProfileController@show')->name('profile');
-Route::post('profile/address',  'UserProfileController@updateAddress')->name('profile-address');
+//Route::get('profile',  'UserProfileController@show')->name('profile');
+//Route::post('profile/address',  'UserProfileController@updateAddress')->name('profile-address');
 
-
+Route::post('profile/settings', 'StudentProfileController@updateSettings')->name('update-settings');
+Route::get('profile', 'StudentProfileController@show')->name('profile');
 
 Route::get('test', function (){
 

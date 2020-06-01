@@ -76,4 +76,5 @@
      </div>
 
  </div>
+ @include('common/newsletter')
 @endsection
