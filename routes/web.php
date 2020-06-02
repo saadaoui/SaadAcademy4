@@ -31,6 +31,13 @@ Route::post('language', 'LanguageController@setLanguage')->name('language');
 Route::post('profile/settings', 'StudentProfileController@updateSettings')->name('update-settings');
 Route::get('profile', 'StudentProfileController@show')->name('profile');
 
+Route::get('my-courses', 'TeacherController@index')->name('my-courses');
+
+Route::get('course-categories', 'CourseCategoryController@index')->name('course-categories');
+Route::post('course-categories', 'CourseCategoryController@store');
+Route::put('course-categories', 'CourseCategoryController@edit');
+Route::delete('course-categories', 'CourseCategoryController@delete');
+
 Route::get('test', function (){
 
     $user=User::find(1);

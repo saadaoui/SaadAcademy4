@@ -18084,6 +18084,12 @@ jQuery(document).ready(function ($) {
   $languageSelect.on('change', function () {
     $languageSwitcherForm.submit();
   });
+  var $deleteCategoryBtn = $('a.delete-category');
+  $deleteCategoryBtn.on('click', function (e) {
+    e.preventDefault();
+    $('#delete_modal').modal();
+    $('#category_id').val($(this).data('category'));
+  });
 });
 
 /***/ }),

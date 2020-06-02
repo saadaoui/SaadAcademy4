@@ -2,38 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fa73eb6-ca0c-4f6c-8d07-dfea25a7dfd2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Tool_based_on_Symfony_Console_31_5_2020_7_23__artisan.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentProfileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_01_173436_add_biography_to_users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/migrations.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/dash-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/dash-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/student/dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/student/profile-card/settings.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/student/profile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/teacher/dashbard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/teacher/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Course.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/CourseCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/CourseTag.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CourseCategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CourseController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CourseTagController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LessonAttachmentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LessonController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MediaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SectionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TeacherController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Lesson.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/LessonAttachment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Media.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_01_193918_create_course_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_01_194014_create_course_tags_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_01_194047_create_courses_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_01_194142_create_lessons_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_01_194255_create_lesson_attachments_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_01_200851_create_media_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_01_205611_create_sections_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_01_223042_create_course_tag_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_01_223127_create_course_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_02_025618_add_user_to_categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/teacher/categories/categories.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/teacher/courses/course.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/teacher/courses/courses.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EmailConfirmationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmailConfirmationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/common/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/common/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/common/top-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/common/top-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/teacher/dashbard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/teacher/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -309,7 +311,8 @@
     <MESSAGE value="add user profile" />
     <MESSAGE value="add header navbar and nav" />
     <MESSAGE value="sign in and sign up v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="sign in and sign up v2" />
+    <MESSAGE value="add profile to dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="add profile to dashboard" />
   </component>
   <component name="WindowStateProjectService">
     <state x="172" y="0" key="#CLI_Interpreters" timestamp="1590965943165">
@@ -340,10 +343,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="442" y="14" width="292" height="510" key="#com.jetbrains.php.framework.ui.FailedToParseDialog/0.0.1366.728@0.0.1366.728" timestamp="1590944947465" />
-    <state x="367" y="2" key="#dev" timestamp="1591007520614">
+    <state x="367" y="2" key="#dev" timestamp="1591044974747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="367" y="2" key="#dev/0.0.1366.728@0.0.1366.728" timestamp="1591007520614" />
+    <state x="367" y="2" key="#dev/0.0.1366.728@0.0.1366.728" timestamp="1591044974747" />
     <state x="367" y="2" key="#dev_(1)" timestamp="1591007533036">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -356,10 +359,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="367" y="2" key="#watch/0.0.1366.728@0.0.1366.728" timestamp="1591007285577" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1590889402223">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591123401548">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590889402223" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1591123401548" />
     <state x="382" y="219" width="727" height="290" key="ComposerCompositePathDialog" timestamp="1590944902653">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -392,22 +395,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="68" width="716" height="592" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590437654135" />
-    <state width="1310" height="71" key="GridCell.Tab.0.bottom" timestamp="1591008764832">
+    <state width="1310" height="268" key="GridCell.Tab.0.bottom" timestamp="1591120748359">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1310" height="71" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591008764832" />
-    <state width="1310" height="71" key="GridCell.Tab.0.center" timestamp="1591008764832">
+    <state width="1310" height="268" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591120748359" />
+    <state width="1310" height="268" key="GridCell.Tab.0.center" timestamp="1591120748359">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1310" height="71" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591008764832" />
-    <state width="1310" height="71" key="GridCell.Tab.0.left" timestamp="1591008764832">
+    <state width="1310" height="268" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591120748359" />
+    <state width="1310" height="268" key="GridCell.Tab.0.left" timestamp="1591120748359">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1310" height="71" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591008764832" />
-    <state width="1310" height="71" key="GridCell.Tab.0.right" timestamp="1591008764832">
+    <state width="1310" height="268" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591120748359" />
+    <state width="1310" height="268" key="GridCell.Tab.0.right" timestamp="1591120748359">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1310" height="71" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591008764832" />
+    <state width="1310" height="268" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591120748359" />
     <state width="236" height="549" key="HiddenNamespacesPopup" timestamp="1590954464839">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -416,10 +419,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="443" y="177" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1590707536729" />
-    <state x="439" y="187" key="NewPhpFileDialog" timestamp="1591034142889">
+    <state x="439" y="187" key="NewPhpFileDialog" timestamp="1591061680695">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="439" y="187" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1591034142889" />
+    <state x="439" y="187" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1591061680695" />
     <state x="505" y="84" key="RollbackChangesDialog" timestamp="1590464311882">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -432,10 +435,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="475" y="178" key="SymfonyComponentCompositeDataDialog/0.0.1366.728@0.0.1366.728" timestamp="1590906199216" />
-    <state x="275" y="36" key="Vcs.Push.Dialog.v2" timestamp="1590889414014">
+    <state x="275" y="36" key="Vcs.Push.Dialog.v2" timestamp="1591034516530">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="36" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590889414014" />
+    <state x="275" y="36" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1591034516530" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590964339160">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -456,10 +459,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" width="840" height="1034" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1590945527777" />
-    <state x="346" y="49" width="840" height="678" key="search.everywhere.popup" timestamp="1591028660322">
+    <state x="346" y="49" width="840" height="678" key="search.everywhere.popup" timestamp="1591113212044">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="840" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1591028660322" />
+    <state x="346" y="49" width="840" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1591113212044" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -468,6 +471,11 @@
           <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/Auth/LoginController.php</url>
           <line>7</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/teacher/categories/categories.blade.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

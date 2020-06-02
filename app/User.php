@@ -52,6 +52,9 @@ class User extends Authenticatable
     public function shippingAddress(){
 
         return $this->hasOne(Address::class,'id','shipping_address');
+    }
 
+    public function categories(){
+         return $this->hasMany(CourseCategory::class);
     }
 }
